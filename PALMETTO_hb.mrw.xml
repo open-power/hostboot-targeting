@@ -1,0 +1,2102 @@
+<!-- IBM_PROLOG_BEGIN_TAG                                                   -->
+<!-- This is an automatically generated prolog.                             -->
+<!--                                                                        -->
+<!-- $Source: src/usr/targeting/common/xmltohb/PALMETTO_hb.mrw.xml $        -->
+<!--                                                                        -->
+<!-- IBM CONFIDENTIAL                                                       -->
+<!--                                                                        -->
+<!-- COPYRIGHT International Business Machines Corp. 2014                   -->
+<!--                                                                        -->
+<!-- p1                                                                     -->
+<!--                                                                        -->
+<!-- Object Code Only (OCO) source materials                                -->
+<!-- Licensed Internal Code Source Materials                                -->
+<!-- IBM HostBoot Licensed Internal Code                                    -->
+<!--                                                                        -->
+<!-- The source code for this program is not published or otherwise         -->
+<!-- divested of its trade secrets, irrespective of what has been           -->
+<!-- deposited with the U.S. Copyright Office.                              -->
+<!--                                                                        -->
+<!-- Origin: 30                                                             -->
+<!--                                                                        -->
+<!-- IBM_PROLOG_END_TAG                                                     -->
+<!-- Source path = /gsa/ausgsa/home/n/j/njames/palmetto/mrw/xml/data -->
+<attributes>
+
+<!-- PALMETTO System with new values-->
+
+<targetInstance>
+    <id>sys0</id>
+    <type>sys-sys-power8</type>
+    <attribute>
+	    <id>MODEL</id>
+	    <default>POWER8</default> <!-- wh_palmetto_bup used to be 'PALMETTO' -->
+    </attribute>    
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:system:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>FREQ_PROC_REFCLOCK</id>
+        <default>133</default>
+    </attribute>
+    <attribute>
+        <id>FREQ_PROC_REFCLOCK_KHZ</id>
+        <default>133333</default>
+    </attribute>
+    <attribute>
+        <id>EXECUTION_PLATFORM</id>
+        <default>1</default>
+    </attribute>
+    <attribute>
+        <id>FREQ_MEM_REFCLOCK</id>
+        <default>133</default>
+    </attribute>
+    <!-- System Attributes from MRW -->
+    <attribute>
+        <id>ALL_MCS_IN_INTERLEAVING_GROUP</id>
+        <default>
+            0
+        </default>
+    </attribute>
+    <attribute>
+        <id>BOOT_FREQ_MHZ</id>
+        <default>
+            0x0960
+        </default>
+    </attribute>
+    <attribute>
+        <id>FREQ_A</id>
+        <default>
+            0x1900
+        </default>
+    </attribute>
+    <attribute>
+        <id>FREQ_PB</id>
+        <default>
+            0x0960
+        </default>
+    </attribute>
+    <attribute>
+        <id>MIN_FREQ_MHZ</id>
+        <default>
+            0x0578
+        </default>
+    </attribute>
+    <attribute>
+        <id>NOMINAL_FREQ_MHZ</id>
+        <default>
+            3000
+        </default>
+    </attribute>
+    <attribute>
+        <id>NEST_FREQ_MHZ</id>
+        <default>
+            0x0960
+        </default>
+    </attribute>
+    <attribute>
+        <id>FREQ_PCIE</id>
+        <default>
+            0x03E8
+        </default>
+    </attribute>
+    <attribute>
+        <id>FREQ_X</id>
+        <default>
+            0x12C0
+        </default>
+    </attribute>
+    <attribute>
+        <id>MSS_CLEANER_ENABLE</id>
+        <default>
+            1
+        </default>
+    </attribute>
+    <attribute>
+        <id>MSS_MBA_ADDR_INTERLEAVE_BIT</id>
+        <default>
+            24
+        </default>
+    </attribute>
+    <attribute>
+        <id>MSS_MBA_CACHELINE_INTERLEAVE_MODE</id>
+        <default>
+            1
+        </default>
+    </attribute>
+    <attribute>
+        <id>MSS_PREFETCH_ENABLE</id>
+        <default>
+            1
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_EPS_TABLE_TYPE</id>
+        <default>
+            2
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_FABRIC_PUMP_MODE</id>
+        <default>
+            1
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_X_BUS_WIDTH</id>
+        <default>
+            2
+        </default>
+    </attribute>
+    <attribute>
+        <id>X_EREPAIR_THRESHOLD_FIELD</id>
+        <default>
+            1
+        </default>
+    </attribute>
+    <attribute>
+        <id>A_EREPAIR_THRESHOLD_FIELD</id>
+        <default>
+            1
+        </default>
+    </attribute>
+    <attribute>
+        <id>DMI_EREPAIR_THRESHOLD_FIELD</id>
+        <default>
+            1
+        </default>
+    </attribute>
+    <attribute>
+        <id>X_EREPAIR_THRESHOLD_MNFG</id>
+        <default>
+            0
+        </default>
+    </attribute>
+    <attribute>
+        <id>A_EREPAIR_THRESHOLD_MNFG</id>
+        <default>
+            0
+        </default>
+    </attribute>
+    <attribute>
+        <id>DMI_EREPAIR_THRESHOLD_MNFG</id>
+        <default>
+            0
+        </default>
+    </attribute>
+    <attribute>
+        <id>MRW_SAFEMODE_MEM_THROTTLE_NUMERATOR_PER_MBA</id>
+        <default>
+            96
+        </default>
+    </attribute>
+    <attribute>
+        <id>MRW_SAFEMODE_MEM_THROTTLE_DENOMINATOR</id>
+        <default>
+            512
+        </default>
+    </attribute>
+    <attribute>
+        <id>MRW_SAFEMODE_MEM_THROTTLE_NUMERATOR_PER_CHIP</id>
+        <default>
+            32
+        </default>
+    </attribute>
+    <attribute>
+        <id>MRW_THERMAL_MEMORY_POWER_LIMIT</id>
+        <default>
+            5000
+        </default>
+    </attribute>
+    <!-- End System Attributes from MRW -->
+
+    <!-- The default value of the following three attributes are written  -->
+    <!-- by the HWP using them. The default values are not from MRW. They -->
+    <!-- are included here FYI.                                           -->
+    <attribute>
+        <id>PROC_EPS_GB_DIRECTION</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>PROC_EPS_GB_PERCENTAGE</id>
+        <default>0x14</default>
+    </attribute>
+    <attribute>
+        <id>PROC_FABRIC_ASYNC_SAFE_MODE</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>ISTEP_MODE</id>
+        <default>0</default> <!-- 1 == SPLess SingleStep mode -->
+    </attribute>
+    <attribute>
+        <id>SP_FUNCTIONS</id>
+        <default>
+            <field><id>baseServices</id><value>0</value></field>
+            <field><id>fsiSlaveInit</id><value>0</value></field>
+            <field><id>mailboxEnabled</id><value>0</value></field>
+            <field><id>fsiMasterInit</id><value>0</value></field>
+            <field><id>hardwareChangeDetection</id><value>0</value></field>
+            <field><id>powerLineDisturbance</id><value>0</value></field>
+            <field><id>pnorVpdCache</id><valud>0</valud></field>
+            <field><id>reserved</id><value>0</value></field>
+        </default>
+    </attribute>
+        <attribute>
+        <id>HB_SETTINGS</id>
+        <default>
+            <field><id>traceContinuous</id><value>0</value></field>
+            <field><id>traceScanDebug</id><value>0</value></field>
+            <field><id>reserved</id><value>0</value></field>
+        </default>
+    </attribute>
+    <attribute>
+        <id>PAYLOAD_KIND</id>
+        <default>SAPPHIRE</default>
+    </attribute>
+    <!-- TODO. These must be from MRW. Hardcoded for now -->
+    <attribute>
+        <id>PAYLOAD_BASE</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>PAYLOAD_ENTRY</id>
+        <default>0x10</default>
+    </attribute>
+    <!-- wh_palmetto_bup <attribute>
+         <id>CONSOLE_KIND</id>
+         <default>UART</default>
+     </attribute> -->
+    <!-- wh_palmetto_bup <attribute> 
+        <id>CONSOLE_UART_BASE</id>
+        <default>0x3f8</default>
+    </attribute> -->
+    <!-- wh_palmetto_bup <attribute>
+        <id>CONSOLE_UART_BAUD_RATE</id>
+        <default>115200</default>
+    </attribute> -->
+    <!-- OVERRIDE: Debug port via LPC port 80 -->
+    <!-- wh_palmetto_bup <attribute>
+        <id>LPC_DEBUG_PORT</id>
+        <default>0x80</default>
+    </attribute> -->
+    <attribute>
+        <id>MSS_MBA_ADDR_INTERLEAVE_BIT</id>
+        <default>24</default>
+    </attribute>
+    <attribute>
+        <id>MSS_MBA_CACHELINE_INTERLEAVE_MODE</id>
+        <default>1</default>
+    </attribute>
+    <attribute>
+        <id>MSS_PREFETCH_ENABLE</id>
+        <default>1</default>
+    </attribute>
+    <attribute>
+        <id>MSS_CLEANER_ENABLE</id>
+        <default>1</default>
+    </attribute>
+    <attribute>
+        <id>MAX_PROC_CHIPS_PER_NODE</id>
+        <default>1</default>
+    </attribute>
+    <attribute>
+        <id>MAX_EXS_PER_PROC_CHIP</id>
+        <default>12</default>
+    </attribute>
+    <attribute>
+        <id>MAX_MBAS_PER_MEMBUF_CHIP</id>
+        <default>2</default>
+    </attribute>
+    <attribute>
+        <id>MAX_MBA_PORTS_PER_MBA</id>
+        <default>2</default>
+    </attribute>
+    <attribute>
+        <id>MAX_DIMMS_PER_MBA_PORT</id>
+        <default>2</default>
+    </attribute>
+    <attribute>
+        <id>MAX_CHIPLETS_PER_PROC</id>
+        <default>32</default>
+    </attribute>
+    <attribute>
+        <id>MAX_MCS_PER_SYSTEM</id>
+        <default>8</default>
+    </attribute>
+    <!-- Start pm_plat_attributes.xml -->
+    <attribute><id>FREQ_CORE_MAX</id>
+        <default>4000</default>
+    </attribute>
+    <attribute><id>PM_EXTERNAL_VRM_STEPSIZE</id>
+        <default>2500</default>
+    </attribute>
+    <attribute><id>PM_EXTERNAL_VRM_STEPDELAY</id>
+        <default>10</default>
+    </attribute>
+    <attribute><id>PM_RESONANT_CLOCK_FULL_CLOCK_SECTOR_BUFFER_FREQUENCY</id>
+        <default>2000</default>
+    </attribute>
+    <attribute><id>PM_RESONANT_CLOCK_LOW_BAND_LOWER_FREQUENCY</id>
+        <default>2300</default>
+    </attribute>
+    <attribute><id>PM_RESONANT_CLOCK_LOW_BAND_UPPER_FREQUENCY</id>
+        <default>3000</default>
+    </attribute>
+    <attribute><id>PM_RESONANT_CLOCK_HIGH_BAND_LOWER_FREQUENCY</id>
+        <default>3050</default>
+    </attribute>
+    <attribute><id>PM_RESONANT_CLOCK_HIGH_BAND_UPPER_FREQUENCY</id>
+        <default>4800</default>
+    </attribute>
+    <attribute><id>PM_SAFE_FREQUENCY</id>
+        <default>3200</default>
+    </attribute>
+    <attribute><id>PM_SPIPSS_FREQUENCY</id>
+        <default>10</default>
+    </attribute>
+    <attribute><id>PM_SPIVID_FREQUENCY</id>
+        <default>0x1</default>
+    </attribute>
+
+    <!-- correlate HDAT drawer number to Hostboot Instance number -->
+    <attribute><id>FABRIC_TO_PHYSICAL_NODE_MAP</id>
+        <default>0,255,255,255,255,255,255,255</default>
+    </attribute>
+
+</targetInstance>
+
+
+<!-- PALMETTO System node 0 -->
+
+<targetInstance>
+    <id>sys0node0</id>
+    <type>enc-node-power8</type>
+    <attribute><id>HUID</id><default>0x00020000</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:node:TO_BE_ADDED</default>
+    </compileAttribute>
+</targetInstance>
+
+    <!-- PALMETTO n0p0 processor chip -->
+
+<targetInstance>
+    <id>sys0node0proc0</id>
+    <type>chip-processor-venice</type>
+    <attribute><id>HUID</id><default>0x00050000</default></attribute>
+    <attribute><id>POSITION</id><default>0</default></attribute>
+    <attribute><id>SCOM_SWITCHES</id>
+        <default>
+            <field><id>useFsiScom</id><value>0</value></field>
+            <field><id>useXscom</id><value>1</value></field>
+            <field><id>useInbandScom</id><value>0</value></field>
+            <field><id>reserved</id><value>0</value></field>
+        </default>
+    </attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0</default>
+    </compileAttribute>
+    <attribute>
+        <id>FABRIC_NODE_ID</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>FABRIC_CHIP_ID</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>FRU_ID</id>
+        <default>0</default>
+    </attribute>
+    <attribute><id>VPD_REC_NUM</id><default>0</default></attribute>
+
+    <!-- workaround for SW196865 - see  RTC:69918 for additional details -->
+    <!-- wh_palmetto_bup <attribute>
+    <id>PROC_EX_FUNC_L3_LENGTH</id>
+        <default>49020</default>
+    </attribute> -->
+    <attribute><id>PROC_DCM_INSTALLED</id>
+        <default>0</default>
+    </attribute>
+    <!-- Master Proc attribute -->
+    <attribute>
+        <id>PROC_MASTER_TYPE</id>
+        <default>ACTING_MASTER</default>
+    </attribute>    <attribute>
+        <id>EEPROM_VPD_PRIMARY_INFO</id>
+        <default>
+            <field><id>i2cMasterPath</id><value>physical:sys-0/node-0/proc-0</value></field>
+             <field><id>port</id><value>0</value></field>
+             <field><id>devAddr</id><value>0xA0</value></field>
+             <field><id>engine</id><value>0</value></field>
+             <field><id>byteAddrOffset</id><value>0x02</value></field>
+             <field><id>maxMemorySizeKB</id><value>0x40</value></field>
+             <field><id>writePageSize</id><value>0x80</value></field>
+             <field><id>writeCycleTime</id><value>0x05</value></field>
+        </default>
+    </attribute>
+    <attribute>
+        <id>EEPROM_VPD_BACKUP_INFO</id>
+        <default>
+            <field><id>i2cMasterPath</id><value>physical:sys-0/node-0/proc-0</value></field>
+             <field><id>port</id><value>1</value></field>
+             <field><id>devAddr</id><value>0xA0</value></field>
+             <field><id>engine</id><value>0</value></field>
+             <field><id>byteAddrOffset</id><value>0x02</value></field>
+             <field><id>maxMemorySizeKB</id><value>0x40</value></field>
+             <field><id>writePageSize</id><value>0x80</value></field>
+             <field><id>writeCycleTime</id><value>0x05</value></field>
+        </default>
+    </attribute>
+    <attribute>
+        <id>EEPROM_SBE_PRIMARY_INFO</id>
+        <default>
+            <field><id>i2cMasterPath</id><value>physical:sys-0/node-0/proc-0</value></field>
+             <field><id>port</id><value>0</value></field>
+             <field><id>devAddr</id><value>0xA2</value></field>
+             <field><id>engine</id><value>0</value></field>
+             <field><id>byteAddrOffset</id><value>0x02</value></field>
+             <field><id>maxMemorySizeKB</id><value>0x40</value></field>
+             <field><id>writePageSize</id><value>0x80</value></field>
+             <field><id>writeCycleTime</id><value>0x05</value></field>
+        </default>
+    </attribute>
+    <attribute>
+        <id>EEPROM_SBE_BACKUP_INFO</id>
+        <default>
+            <field><id>i2cMasterPath</id><value>physical:sys-0/node-0/proc-0</value></field>
+             <field><id>port</id><value>1</value></field>
+             <field><id>devAddr</id><value>0xA2</value></field>
+             <field><id>engine</id><value>0</value></field>
+             <field><id>byteAddrOffset</id><value>0x02</value></field>
+             <field><id>maxMemorySizeKB</id><value>0x40</value></field>
+             <field><id>writePageSize</id><value>0x80</value></field>
+             <field><id>writeCycleTime</id><value>0x05</value></field>
+        </default>
+    </attribute>
+
+    <!-- Data from PHYP Memory Map -->
+    <attribute><id>FSP_BASE_ADDR</id>
+        <default>0x0000000000000000</default>
+    </attribute>
+    <attribute><id>PSI_BRIDGE_BASE_ADDR</id>
+        <default>0x0000000000000000</default>
+    </attribute>
+    <attribute><id>PCI_BASE_ADDRS_64</id>
+	    <default>
+		    0x0003D00000000000,0x0003D01000000000,
+		    0x0003D02000000000,0x0003D03000000000
+	    </default>
+    </attribute>
+    <attribute><id>PCI_BASE_ADDRS_32</id>
+	    <default>
+		    0x0003FF8000000000,0x0003FF8080000000,
+		    0x0003FF8100000000,0x0003FF8180000000
+	    </default>
+    </attribute>
+
+    <attribute><id>INTP_BASE_ADDR</id>
+        <default>0x0003FFFF80000000</default>
+    </attribute>
+    <attribute><id>PHB_BASE_ADDRS</id>
+        <default>
+            0x0003FFFE40000000,0x0003FFFE40100000,
+            0x0003FFFE40200000,0x0003FFFE40300000
+        </default>
+    </attribute>
+    <attribute><id>RNG_BASE_ADDR</id>
+        <default>0x0003FFFF40000000</default>
+    </attribute>
+    <attribute><id>IBSCOM_PROC_BASE_ADDR</id>
+        <default>0x0003E00000000000</default>
+    </attribute>
+    <!-- End PHYP Memory Map -->
+
+    <!-- PROC_PCIE_ attributes -->
+    <attribute>
+        <id>PROC_PCIE_IOP_G2_PLL_CONTROL0</id>
+        <default>
+            0x000018F4,0x000018F4
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_IOP_G3_PLL_CONTROL0</id>
+        <default>
+            0x0000086C,0x0000086C
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_IOP_PCS_CONTROL0</id>
+        <default>
+            0x00003AE8,0x00003AE8
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_IOP_PCS_CONTROL1</id>
+        <default>
+            0x00005CB9,0x00005CB9
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_IOP_PLL_GLOBAL_CONTROL0</id>
+        <default>
+            0x00000146,0x00000146
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_IOP_PLL_GLOBAL_CONTROL1</id>
+        <default>
+            0x000006D7,0x000006D7
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_IOP_RX_PEAK</id>
+        <default>
+            0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8,0x00000FF8
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_IOP_RX_SDL</id>
+        <default>
+            0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A,0x0000294A
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_IOP_RX_VGA_CONTROL2</id>
+        <default>
+            0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451,0x00009451
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_IOP_TX_BWLOSS1</id>
+        <default>
+            0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_IOP_TX_FIFO_OFFSET</id>
+        <default>
+            0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294,0x00004294
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_IOP_TX_RCVRDETCNTL</id>
+        <default>
+            0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151,0x00002151
+        </default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_IOP_ZCAL_CONTROL</id>
+        <default>
+            0x00000000,0x00000000
+        </default>
+    </attribute>
+    <!-- End PROC_PCIE_ attributes -->
+
+    <!-- The default value of the following three attributes are written by -->
+    <!-- the FSP. They are included here because VBU/VPO uses faked PNOR.   -->
+    <attribute>
+        <id>PROC_PCIE_IOP_CONFIG</id>
+        <default>1</default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_IOP_SWAP</id>
+        <default>0,0</default>
+    </attribute>
+    <attribute>
+        <id>PROC_PCIE_PHB_ACTIVE</id>
+        <default>0xe0</default>
+    </attribute>
+
+    <!-- Start pm_plat_attributes.xml -->
+    <attribute><id>PM_SLEEP_TYPE</id>
+        <default>1</default><!-- DEEP -->
+    </attribute>
+    <attribute><id>PM_PBAX_NODEID</id>
+        <default>0</default>
+    </attribute>
+    <attribute><id>PM_PBAX_CHIPID</id>
+        <default></default>
+    </attribute>
+    <attribute><id>PM_PBAX_BRDCST_ID_VECTOR</id>
+        <default></default>
+    </attribute>
+    <attribute><id>PM_SPIVID_PORT_ENABLE</id>
+        <default>0x4</default><!-- PORT0NONRED -->
+    </attribute>
+    <attribute><id>PM_APSS_CHIP_SELECT</id>
+        <default>0x00</default><!-- CS0 -->       
+    </attribute>
+    <!-- End pm_plat_attributes.xml -->
+    </targetInstance>
+
+<!-- PALMETTO n0p0 EX units -->
+
+<targetInstance>
+    <id>sys0node0proc0ex1</id>
+    <type>unit-ex-venice</type>
+    <attribute><id>HUID</id><default>0x00060001</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-1</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-1</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/ex1</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>1</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex2</id>
+    <type>unit-ex-venice</type>
+    <attribute><id>HUID</id><default>0x00060002</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-2</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-2</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/ex2</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>2</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex3</id>
+    <type>unit-ex-venice</type>
+    <attribute><id>HUID</id><default>0x00060003</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-3</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-3</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/ex3</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>3</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex4</id>
+    <type>unit-ex-venice</type>
+    <attribute><id>HUID</id><default>0x00060004</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-4</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-4</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/ex4</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>4</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex5</id>
+    <type>unit-ex-venice</type>
+    <attribute><id>HUID</id><default>0x00060005</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-5</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-5</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/ex5</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>5</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex6</id>
+    <type>unit-ex-venice</type>
+    <attribute><id>HUID</id><default>0x00060006</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-6</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-6</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/ex6</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>6</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex9</id>
+    <type>unit-ex-venice</type>
+    <attribute><id>HUID</id><default>0x00060009</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-9</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-9</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/ex9</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>9</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex10</id>
+    <type>unit-ex-venice</type>
+    <attribute><id>HUID</id><default>0x0006000A</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-10</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-10</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/ex10</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>10</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex11</id>
+    <type>unit-ex-venice</type>
+    <attribute><id>HUID</id><default>0x0006000B</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-11</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-11</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/ex11</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>11</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex12</id>
+    <type>unit-ex-venice</type>
+    <attribute><id>HUID</id><default>0x0006000C</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-12</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-12</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/ex12</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>12</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex13</id>
+    <type>unit-ex-venice</type>
+    <attribute><id>HUID</id><default>0x0006000D</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-13</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-13</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/ex13</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>13</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex14</id>
+    <type>unit-ex-venice</type>
+    <attribute><id>HUID</id><default>0x0006000E</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-14</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-14</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/ex14</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>14</default>
+    </attribute>
+</targetInstance>
+
+<!-- PALMETTO n0p0 core units -->
+
+<targetInstance>
+    <id>sys0node0proc0ex1core0</id>
+    <type>unit-core-venice</type>
+    <attribute><id>HUID</id><default>0x00070001</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-1/core-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-1/core-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/core1</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>1</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex2core0</id>
+    <type>unit-core-venice</type>
+    <attribute><id>HUID</id><default>0x00070002</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-2/core-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-2/core-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/core2</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>2</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex3core0</id>
+    <type>unit-core-venice</type>
+    <attribute><id>HUID</id><default>0x00070003</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-3/core-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-3/core-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/core3</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>3</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex4core0</id>
+    <type>unit-core-venice</type>
+    <attribute><id>HUID</id><default>0x00070004</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-4/core-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-4/core-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/core4</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>4</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex5core0</id>
+    <type>unit-core-venice</type>
+    <attribute><id>HUID</id><default>0x00070005</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-5/core-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-5/core-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/core5</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>5</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex6core0</id>
+    <type>unit-core-venice</type>
+    <attribute><id>HUID</id><default>0x00070006</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-6/core-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-6/core-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/core6</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>6</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex9core0</id>
+    <type>unit-core-venice</type>
+    <attribute><id>HUID</id><default>0x00070009</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-9/core-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-9/core-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/core9</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>9</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex10core0</id>
+    <type>unit-core-venice</type>
+    <attribute><id>HUID</id><default>0x0007000A</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-10/core-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-10/core-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/core10</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>10</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex11core0</id>
+    <type>unit-core-venice</type>
+    <attribute><id>HUID</id><default>0x0007000B</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-11/core-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-11/core-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/core11</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>11</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex12core0</id>
+    <type>unit-core-venice</type>
+    <attribute><id>HUID</id><default>0x0007000C</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-12/core-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-12/core-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/core12</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>12</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex13core0</id>
+    <type>unit-core-venice</type>
+    <attribute><id>HUID</id><default>0x0007000D</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-13/core-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-13/core-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/core13</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>13</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0ex14core0</id>
+    <type>unit-core-venice</type>
+    <attribute><id>HUID</id><default>0x0007000E</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/ex-14/core-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/ex-14/core-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/core14</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>14</default>
+    </attribute>
+</targetInstance>
+
+<!-- PALMETTO n0p0 MCS units -->
+
+<targetInstance>
+    <id>sys0node0proc0mcs0</id>
+    <type>unit-mcs-venice</type>
+    <attribute><id>HUID</id><default>0x000B0000</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/mcs-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/mcs0</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>0</default>
+    </attribute>
+    <attribute><id>IBSCOM_MCS_BASE_ADDR</id>
+        <!-- baseAddr = 0x0003E00000000000, 128GB per MCS -->
+        <default>0x0003E00000000000</default>
+    </attribute>
+    <attribute><id>DMI_REFCLOCK_SWIZZLE</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_MSBSWAP</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_LANE_INVERT</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0mcs1</id>
+    <type>unit-mcs-venice</type>
+    <attribute><id>HUID</id><default>0x000B0001</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/mcs-1</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-1</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/mcs1</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>1</default>
+    </attribute>
+    <attribute><id>IBSCOM_MCS_BASE_ADDR</id>
+        <!-- baseAddr = 0x0003E00000000000, 128GB per MCS -->
+        <default>0x0003E02000000000</default>
+    </attribute>
+    <attribute><id>DMI_REFCLOCK_SWIZZLE</id>
+        <default>2</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_MSBSWAP</id>
+        <default>1</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_LANE_INVERT</id>
+        <default>0x00000000</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0mcs2</id>
+    <type>unit-mcs-venice</type>
+    <attribute><id>HUID</id><default>0x000B0002</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/mcs-2</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-2</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/mcs2</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>2</default>
+    </attribute>
+    <attribute><id>IBSCOM_MCS_BASE_ADDR</id>
+        <!-- baseAddr = 0x0003E00000000000, 128GB per MCS -->
+        <default>0x0003E04000000000</default>
+    </attribute>
+    <attribute><id>DMI_REFCLOCK_SWIZZLE</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_MSBSWAP</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_LANE_INVERT</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0mcs3</id>
+    <type>unit-mcs-venice</type>
+    <attribute><id>HUID</id><default>0x000B0003</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/mcs-3</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-3</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/mcs3</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>3</default>
+    </attribute>
+    <attribute><id>IBSCOM_MCS_BASE_ADDR</id>
+        <!-- baseAddr = 0x0003E00000000000, 128GB per MCS -->
+        <default>0x0003E06000000000</default>
+    </attribute>
+    <attribute><id>DMI_REFCLOCK_SWIZZLE</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_MSBSWAP</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_LANE_INVERT</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0mcs4</id>
+    <type>unit-mcs-venice</type>
+    <attribute><id>HUID</id><default>0x000B0004</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/mcs-4</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-4</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/mcs4</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>4</default>
+    </attribute>
+    <attribute><id>IBSCOM_MCS_BASE_ADDR</id>
+        <!-- baseAddr = 0x0003E00000000000, 128GB per MCS -->
+        <default>0x0003E08000000000</default>
+    </attribute>
+    <attribute><id>DMI_REFCLOCK_SWIZZLE</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_MSBSWAP</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_LANE_INVERT</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0mcs5</id>
+    <type>unit-mcs-venice</type>
+    <attribute><id>HUID</id><default>0x000B0005</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/mcs-5</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-5</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/mcs5</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>5</default>
+    </attribute>
+    <attribute><id>IBSCOM_MCS_BASE_ADDR</id>
+        <!-- baseAddr = 0x0003E00000000000, 128GB per MCS -->
+        <default>0x0003E0A000000000</default>
+    </attribute>
+    <attribute><id>DMI_REFCLOCK_SWIZZLE</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_MSBSWAP</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_LANE_INVERT</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0mcs6</id>
+    <type>unit-mcs-venice</type>
+    <attribute><id>HUID</id><default>0x000B0006</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/mcs-6</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-6</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/mcs6</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>6</default>
+    </attribute>
+    <attribute><id>IBSCOM_MCS_BASE_ADDR</id>
+        <!-- baseAddr = 0x0003E00000000000, 128GB per MCS -->
+        <default>0x0003E0C000000000</default>
+    </attribute>
+    <attribute><id>DMI_REFCLOCK_SWIZZLE</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_MSBSWAP</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_LANE_INVERT</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0mcs7</id>
+    <type>unit-mcs-venice</type>
+    <attribute><id>HUID</id><default>0x000B0007</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/mcs-7</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-7</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/turismo_scm-0/VENICE-0/mcs7</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>7</default>
+    </attribute>
+    <attribute><id>IBSCOM_MCS_BASE_ADDR</id>
+        <!-- baseAddr = 0x0003E00000000000, 128GB per MCS -->
+        <default>0x0003E0E000000000</default>
+    </attribute>
+    <attribute><id>DMI_REFCLOCK_SWIZZLE</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_MSBSWAP</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_LANE_INVERT</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<!-- PALMETTO n0p0 PCI units -->
+
+<targetInstance>
+    <id>sys0node0proc0pci0</id>
+    <type>unit-pci-venice</type>
+    <attribute><id>HUID</id><default>0x00100000</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/pci-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/pci-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:pci:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0pci1</id>
+    <type>unit-pci-venice</type>
+    <attribute><id>HUID</id><default>0x00100001</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/pci-1</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/pci-1</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:pci:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>1</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0pci2</id>
+    <type>unit-pci-venice</type>
+    <attribute><id>HUID</id><default>0x00100002</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/pci-2</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/pci-2</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:pci:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>2</default>
+    </attribute>
+</targetInstance>
+
+<!-- PALMETTO n0p0 ABUS units -->
+
+<targetInstance>
+    <id>sys0node0proc0abus0</id>
+    <type>unit-abus-venice</type>
+    <attribute>
+        <id>HUID</id>
+        <default>0x000F0000</default>
+    </attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/abus-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/abus-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:abus_or_xbus:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>PEER_PATH</id>
+        <default>physical:na</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_LANE_INVERT</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_MSBSWAP</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0abus1</id>
+    <type>unit-abus-venice</type>
+    <attribute>
+        <id>HUID</id>
+        <default>0x000F0001</default>
+    </attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/abus-1</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/abus-1</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:abus_or_xbus:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>1</default>
+    </attribute>
+    <attribute>
+        <id>PEER_PATH</id>
+        <default>physical:na</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_LANE_INVERT</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_MSBSWAP</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0abus2</id>
+    <type>unit-abus-venice</type>
+    <attribute>
+        <id>HUID</id>
+        <default>0x000F0002</default>
+    </attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/abus-2</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/abus-2</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:abus_or_xbus:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>2</default>
+    </attribute>
+    <attribute>
+        <id>PEER_PATH</id>
+        <default>physical:na</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_LANE_INVERT</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_MSBSWAP</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<!-- PALMETTO n0p0 XBUS units -->
+
+<targetInstance>
+    <id>sys0node0proc0xbus0</id>
+    <type>unit-xbus-venice</type>
+    <attribute>
+        <id>HUID</id>
+        <default>0x000E0000</default>
+    </attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/xbus-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/xbus-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:abus_or_xbus:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0xbus1</id>
+    <type>unit-xbus-venice</type>
+    <attribute>
+        <id>HUID</id>
+        <default>0x000E0001</default>
+    </attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/xbus-1</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/xbus-1</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:abus_or_xbus:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>1</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0xbus2</id>
+    <type>unit-xbus-venice</type>
+    <attribute>
+        <id>HUID</id>
+        <default>0x000E0002</default>
+    </attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/xbus-2</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/xbus-2</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:abus_or_xbus:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>2</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0proc0xbus3</id>
+    <type>unit-xbus-venice</type>
+    <attribute>
+        <id>HUID</id>
+        <default>0x000E0003</default>
+    </attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/xbus-3</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/xbus-3</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:abus_or_xbus:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>3</default>
+    </attribute>
+</targetInstance>
+
+<!-- PALMETTO n0p0 NX units -->
+
+<targetInstance>
+    <id>sys0node0proc0nx0</id>
+    <type>unit-nx-venice</type>
+    <attribute><id>HUID</id><default>0x001E0000</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/proc-0/nx-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/nx-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<!-- PALMETTO Centaur n0p1 : start -->
+
+<targetInstance>
+    <id>sys0node0membuf1</id>
+    <type>chip-membuf-centaur</type>
+    <attribute><id>HUID</id><default>0x00040001</default></attribute>
+    <attribute><id>POSITION</id><default>1</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/membuf-1</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-1/membuf-1</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/CENTAUR-0</default>
+    </compileAttribute>
+    <attribute>
+        <id>VMEM_ID</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EI_BUS_TX_MSBSWAP</id>
+        <default>0</default>
+    </attribute>
+
+    <!-- FSI is connected via proc0:cMFSI-2 -->
+    <attribute>
+        <id>FSI_MASTER_CHIP</id>
+        <default>physical:sys-0/node-0/proc-0</default>
+    </attribute>
+    <attribute>
+        <id>FSI_MASTER_TYPE</id>
+        <default>CMFSI</default>
+    </attribute>
+    <attribute>
+        <id>FSI_MASTER_PORT</id>
+        <default>2</default>
+    </attribute>
+    <attribute>
+        <id>FSI_SLAVE_CASCADE</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+    <id>FSI_OPTION_FLAGS</id>
+    <default>
+    <field><id>flipPort</id><value>0</value></field>
+    <field><id>reserved</id><value>0</value></field>
+    </default>
+    </attribute>
+    <attribute><id>VPD_REC_NUM</id><default>0</default></attribute>
+    <attribute>
+        <id>EI_BUS_TX_LANE_INVERT</id>
+        <default>0x00000000</default>
+    </attribute>
+</targetInstance>
+
+<!-- PALMETTO Centaur MBAs affiliated with membuf1 -->
+
+<targetInstance>
+    <id>sys0node0membuf1mba0</id>
+    <type>unit-mba-centaur</type>
+    <attribute><id>HUID</id><default>0x000D0002</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/membuf-1/mba-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-1/membuf-1/mba-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/CENTAUR-0/mba01</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>0</default>
+    </attribute>
+</targetInstance>
+
+<targetInstance>
+    <id>sys0node0membuf1mba1</id>
+    <type>unit-mba-centaur</type>
+    <attribute><id>HUID</id><default>0x000D0003</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/membuf-1/mba-1</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-1/membuf-1/mba-1</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/CENTAUR-0/mba23</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>1</default>
+    </attribute>
+</targetInstance>
+
+<!-- PALMETTO Centaur n0p1 : end -->
+
+<!-- PALMETTO Centaur L4 affiliated with membuf1 -->
+
+<targetInstance>
+    <id>sys0node0membuf1l40</id>
+    <type>unit-l4-centaur</type>
+    <attribute><id>HUID</id><default>0x000C0001</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/membuf-1/l4-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-1/membuf-1/l4-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:palmetto_board-assembly-0/palmetto_board-0/CENTAUR-0/L4</default>
+    </compileAttribute>
+    <attribute>
+        <id>CHIP_UNIT</id>
+        <default>0</default>
+    </attribute></targetInstance>
+<!-- PALMETTO Centaur n0p0 : end -->
+
+<!-- PALMETTO DIMMs -->
+
+<!-- DIMM n0:p8 -->
+
+<targetInstance>
+    <id>sys0node0dimm0</id>
+    <type>lcard-dimm-jedec</type>
+    <attribute><id>HUID</id><default>0x00030000</default></attribute>
+    <attribute><id>POSITION</id><default>8</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/dimm-0</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-1/membuf-1/mba-0/dimm-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:logical dimms:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>MBA_DIMM</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>MBA_PORT</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EEPROM_VPD_PRIMARY_INFO</id>
+         <default>
+             <field><id>i2cMasterPath</id><value>physical:sys-0/node-0/membuf-1</value></field>
+             <field><id>port</id><value>0</value></field>
+             <field><id>devAddr</id><value>0xA4</value></field>
+             <field><id>engine</id><value>0</value></field>
+             <field><id>byteAddrOffset</id><value>0x01</value></field>
+             <field><id>maxMemorySizeKB</id><value>0x01</value></field>
+             <field><id>writePageSize</id><value>0x00</value></field>
+             <field><id>writeCycleTime</id><value>0x05</value></field>
+         </default>
+    </attribute>
+    <attribute><id>VPD_REC_NUM</id><default>8</default></attribute>
+</targetInstance>
+
+<!-- DIMM n0:p12 -->
+
+<targetInstance>
+    <id>sys0node0dimm1</id>
+    <type>lcard-dimm-jedec</type>
+    <attribute><id>HUID</id><default>0x00030001</default></attribute>
+    <attribute><id>POSITION</id><default>10</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/dimm-1</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-1/membuf-1/mba-0/dimm-1</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:logical dimms:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>MBA_DIMM</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>MBA_PORT</id>
+        <default>1</default>
+    </attribute>
+    <attribute>
+        <id>EEPROM_VPD_PRIMARY_INFO</id>
+         <default>
+             <field><id>i2cMasterPath</id><value>physical:sys-0/node-0/membuf-1</value></field>
+             <field><id>port</id><value>0</value></field>
+             <field><id>devAddr</id><value>0xA6</value></field>
+             <field><id>engine</id><value>0</value></field>
+             <field><id>byteAddrOffset</id><value>0x01</value></field>
+             <field><id>maxMemorySizeKB</id><value>0x01</value></field>
+             <field><id>writePageSize</id><value>0x00</value></field>
+             <field><id>writeCycleTime</id><value>0x05</value></field>
+         </default>
+    </attribute>
+    <attribute><id>VPD_REC_NUM</id><default>10</default></attribute>
+</targetInstance>
+
+<!-- DIMM n0:p10 -->
+
+<targetInstance>
+    <id>sys0node0dimm2</id>
+    <type>lcard-dimm-jedec</type>
+    <attribute><id>HUID</id><default>0x00030002</default></attribute>
+    <attribute><id>POSITION</id><default>12</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/dimm-2</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-1/membuf-1/mba-1/dimm-0</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:logical dimms:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>MBA_DIMM</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>MBA_PORT</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>EEPROM_VPD_PRIMARY_INFO</id>
+         <default>
+             <field><id>i2cMasterPath</id><value>physical:sys-0/node-0/membuf-1</value></field>
+             <field><id>port</id><value>0</value></field>
+             <field><id>devAddr</id><value>0xA8</value></field>
+             <field><id>engine</id><value>0</value></field>
+             <field><id>byteAddrOffset</id><value>0x01</value></field>
+             <field><id>maxMemorySizeKB</id><value>0x01</value></field>
+             <field><id>writePageSize</id><value>0x00</value></field>
+             <field><id>writeCycleTime</id><value>0x05</value></field>
+         </default>
+    </attribute>
+    <attribute><id>VPD_REC_NUM</id><default>12</default></attribute>
+</targetInstance>
+
+<!-- DIMM n0:p14 -->
+
+<targetInstance>
+    <id>sys0node0dimm3</id>
+    <type>lcard-dimm-jedec</type>
+    <attribute><id>HUID</id><default>0x00030003</default></attribute>
+    <attribute><id>POSITION</id><default>14</default></attribute>
+    <attribute>
+        <id>PHYS_PATH</id>
+        <default>physical:sys-0/node-0/dimm-3</default>
+    </attribute>
+    <attribute>
+        <id>AFFINITY_PATH</id>
+        <default>affinity:sys-0/node-0/proc-0/mcs-1/membuf-1/mba-1/dimm-1</default>
+    </attribute>
+    <compileAttribute>
+        <id>INSTANCE_PATH</id>
+        <default>instance:logical dimms:TO_BE_ADDED</default>
+    </compileAttribute>
+    <attribute>
+        <id>MBA_DIMM</id>
+        <default>0</default>
+    </attribute>
+    <attribute>
+        <id>MBA_PORT</id>
+        <default>1</default>
+    </attribute>
+    <attribute>
+        <id>EEPROM_VPD_PRIMARY_INFO</id>
+         <default>
+             <field><id>i2cMasterPath</id><value>physical:sys-0/node-0/membuf-1</value></field>
+             <field><id>port</id><value>0</value></field>
+             <field><id>devAddr</id><value>0xAA</value></field>
+             <field><id>engine</id><value>0</value></field>
+             <field><id>byteAddrOffset</id><value>0x01</value></field>
+             <field><id>maxMemorySizeKB</id><value>0x01</value></field>
+             <field><id>writePageSize</id><value>0x00</value></field>
+             <field><id>writeCycleTime</id><value>0x05</value></field>
+         </default>
+    </attribute>
+    <attribute><id>VPD_REC_NUM</id><default>14</default></attribute>
+</targetInstance>
+
+</attributes>
