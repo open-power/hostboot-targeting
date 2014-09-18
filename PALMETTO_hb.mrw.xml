@@ -1263,7 +1263,7 @@
     </attribute>
     <attribute>
         <id>EI_BUS_TX_LANE_INVERT</id>
-        <default>0x00000000</default>
+        <default>0x31a50000</default>
     </attribute>
 </targetInstance>
 
