@@ -620,6 +620,7 @@
             0x00000000,0x00000000
         </default>
     </attribute>
+    
     <!-- End PROC_PCIE_ attributes -->
 
     <!-- The default value of the following three attributes are written by -->
@@ -635,6 +636,12 @@
     <attribute>
         <id>PROC_PCIE_PHB_ACTIVE</id>
         <default>0xe0</default>
+    </attribute>
+    
+    <!-- This should eventually be created by parsing the MRW, hardcoded for now -->
+    <attribute>
+        <id>PROC_PCIE_LANE_MASK_NON_BIFURCATED</id>
+        <default>0xFFFF,0x0000,0xFF00,0x00FF</default>
     </attribute>
 
     <!-- Start pm_plat_attributes.xml -->
