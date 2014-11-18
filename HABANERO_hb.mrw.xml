@@ -280,7 +280,27 @@
         <default>4000</default>
     </attribute>
     <!-- End System Attributes from MRW -->
-
+    <attribute>
+        <id>IPMI_SENSORS</id>
+        <default>
+            0x07,0x01, <!-- OS_boot -->
+            0x08,0x02, <!-- Host_Status -->
+            0x09,0x03, <!-- FW_Boot_progress -->
+            0x0a,0x04, <!-- OCC_Active -->
+            0x0b,0x05, <!-- Power_cap -->
+            0x0c,0x06, <!-- PCI -->
+            0x0d,0x07, <!-- Boot_watchdog -->
+            0x0e,0xFF, <!-- Reboot_count -->
+            0x0F,0xFF,
+            0xFF,0xFF,
+            0xFF,0xFF,
+            0xFF,0xFF,
+            0xFF,0xFF,
+            0xFF,0xFF,
+            0xFF,0xFF,
+            0xFF,0xFF
+       </default>
+    </attribute>
     <attribute>
         <id>SP_FUNCTIONS</id>
         <default>
@@ -701,6 +721,27 @@
         <default>0x0</default>
     </attribute>
     <!-- End PM_ attributes -->
+    <attribute>
+        <id>IPMI_SENSORS</id>
+        <default>
+            0x01, 0x12,  <!-- Temperature sensor -->
+            0x05, 0x34,  <!-- Status Sensor -->
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF
+        </default>
+    </attribute>
     </targetInstance>
 
 <!-- HABANERO n0p0 EX units -->
@@ -1043,6 +1084,27 @@
         <id>CHIP_UNIT</id>
         <default>1</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x08,  <!-- Temperature Sensor -->
+             0x05, 0x09,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1069,8 +1131,28 @@
         <id>CHIP_UNIT</id>
         <default>2</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x0a,  <!-- Temperature sensor -->
+             0x05, 0x0b,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
-
 <targetInstance>
     <id>sys0node0proc0ex3core0</id>
     <type>unit-core-venice</type>
@@ -1095,8 +1177,28 @@
         <id>CHIP_UNIT</id>
         <default>3</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x0c,  <!-- Temperature sensor -->
+             0x05, 0x0d,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
-
 <targetInstance>
     <id>sys0node0proc0ex4core0</id>
     <type>unit-core-venice</type>
@@ -1121,6 +1223,27 @@
         <id>CHIP_UNIT</id>
         <default>4</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x0e, <!-- Temperature sensor -->
+             0x05, 0x0F, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1147,6 +1270,27 @@
         <id>CHIP_UNIT</id>
         <default>5</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x10,  <!-- Temperature sensor -->
+             0x05, 0x11,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1173,6 +1317,27 @@
         <id>CHIP_UNIT</id>
         <default>6</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x12, <!-- Temperature sensor -->
+             0x05, 0x13, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1199,6 +1364,27 @@
         <id>CHIP_UNIT</id>
         <default>9</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+        <default>
+             0x01, 0x14, <!-- Temperature sensor -->
+             0x05, 0x15, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1225,6 +1411,27 @@
         <id>CHIP_UNIT</id>
         <default>10</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x16, <!-- Temperature sensor -->
+             0x05, 0x17, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1251,6 +1458,27 @@
         <id>CHIP_UNIT</id>
         <default>11</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x18, <!-- Temperature sensor -->
+             0x05, 0x19, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1277,6 +1505,27 @@
         <id>CHIP_UNIT</id>
         <default>12</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x1a, <!-- Temperature sensor -->
+             0x05, 0x1b, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1303,6 +1552,27 @@
         <id>CHIP_UNIT</id>
         <default>13</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x1C, <!-- Temperature sensor -->
+             0x05, 0x1D, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1329,6 +1599,27 @@
         <id>CHIP_UNIT</id>
         <default>14</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x1E,  <!-- Temperature sensor -->
+             0x05, 0x1F,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <!-- HABANERO n0p0 MCS units -->
@@ -2147,6 +2438,27 @@
         <id>EI_BUS_TX_LANE_INVERT</id>
         <default>0x00000000</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+        <default>
+            0x01, 0x30, <!-- Temperature sensor -->
+            0x05, 0x31, <!-- Status sensor -->
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF
+        </default>
+    </attribute>
 </targetInstance>
 
 <!-- HABANERO Centaur MBAs affiliated with membuf0 -->
@@ -2301,6 +2613,27 @@
     <attribute>
         <id>EI_BUS_TX_LANE_INVERT</id>
         <default>0x00000000</default>
+    </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+        <default>
+            0x01, 0x20, <!-- Temperature sensor -->
+            0x05, 0x21, <!-- Status sensor -->
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF
+        </default>
     </attribute>
 </targetInstance>
 
@@ -2457,6 +2790,27 @@
         <id>EI_BUS_TX_LANE_INVERT</id>
         <default>0x00000000</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x30,  <!-- Temperature Sensor -->
+             0x05, 0x31,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <!-- HABANERO Centaur MBAs affiliated with membuf4 -->
@@ -2612,6 +2966,28 @@
         <id>EI_BUS_TX_LANE_INVERT</id>
         <default>0x00000000</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x30,  <!-- Temperature Sensor -->
+             0x05, 0x31,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- HABANERO Centaur MBAs affiliated with membuf5 -->
@@ -2744,6 +3120,28 @@
         <id>VPD_REC_NUM</id>
         <default>8</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x33,  <!-- Temperature Sensor -->
+             0x05, 0x35,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p12 -->
@@ -2790,6 +3188,28 @@
         <id>VPD_REC_NUM</id>
         <default>12</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x36,  <!-- Temperature Sensor -->
+             0x05, 0x37,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p10 -->
@@ -2836,6 +3256,28 @@
         <id>VPD_REC_NUM</id>
         <default>10</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x38,  <!-- Temperature Sensor -->
+             0x05, 0x39,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p14 -->
@@ -2882,6 +3324,28 @@
         <id>VPD_REC_NUM</id>
         <default>14</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x3a,  <!-- Temperature Sensor -->
+             0x05, 0x3b,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p9 -->
@@ -2928,6 +3392,28 @@
         <id>VPD_REC_NUM</id>
         <default>9</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x3c,  <!-- Temperature Sensor -->
+             0x05, 0x3d,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p13 -->
@@ -2974,6 +3460,28 @@
         <id>VPD_REC_NUM</id>
         <default>13</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x3e,  <!-- Temperature Sensor -->
+             0x05, 0x3f,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p11 -->
@@ -3020,6 +3528,28 @@
         <id>VPD_REC_NUM</id>
         <default>11</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x40,  <!-- Temperature Sensor -->
+             0x05, 0x41,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p15 -->
@@ -3066,6 +3596,28 @@
         <id>VPD_REC_NUM</id>
         <default>15</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x42,  <!-- Temperature Sensor -->
+             0x05, 0x43,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p2 -->
@@ -3112,6 +3664,28 @@
         <id>VPD_REC_NUM</id>
         <default>2</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x44,  <!-- Temperature Sensor -->
+             0x05, 0x45,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p1 -->
@@ -3158,6 +3732,28 @@
         <id>VPD_REC_NUM</id>
         <default>1</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x46,  <!-- Temperature Sensor -->
+             0x05, 0x47,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p3 -->
@@ -3204,6 +3800,28 @@
         <id>VPD_REC_NUM</id>
         <default>3</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x48,  <!-- Temperature Sensor -->
+             0x05, 0x49,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p5 -->
@@ -3250,6 +3868,28 @@
         <id>VPD_REC_NUM</id>
         <default>5</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x4a,  <!-- Temperature Sensor -->
+             0x05, 0x4b,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p6 -->
@@ -3296,6 +3936,28 @@
         <id>VPD_REC_NUM</id>
         <default>6</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x4C,  <!-- Temperature Sensor -->
+             0x05, 0x4D,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p4 -->
@@ -3342,6 +4004,28 @@
         <id>VPD_REC_NUM</id>
         <default>4</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x4E,  <!-- Temperature Sensor -->
+             0x05, 0x4F,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p0 -->
@@ -3388,6 +4072,28 @@
         <id>VPD_REC_NUM</id>
         <default>0</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x50,  <!-- Temperature Sensor -->
+             0x05, 0x51,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p7 -->
@@ -3434,6 +4140,28 @@
         <id>VPD_REC_NUM</id>
         <default>7</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x52,  <!-- Temperature Sensor -->
+             0x05, 0x53,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p42 -->
@@ -3480,6 +4208,28 @@
         <id>VPD_REC_NUM</id>
         <default>42</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x54,  <!-- Temperature Sensor -->
+             0x05, 0x55,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p40 -->
@@ -3526,6 +4276,28 @@
         <id>VPD_REC_NUM</id>
         <default>40</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x56,  <!-- Temperature Sensor -->
+             0x05, 0x57,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p47 -->
@@ -3572,6 +4344,28 @@
         <id>VPD_REC_NUM</id>
         <default>47</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x58,  <!-- Temperature Sensor -->
+             0x05, 0x59,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p45 -->
@@ -3618,6 +4412,28 @@
         <id>VPD_REC_NUM</id>
         <default>45</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x5a,  <!-- Temperature Sensor -->
+             0x05, 0x5b,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p43 -->
@@ -3664,6 +4480,28 @@
         <id>VPD_REC_NUM</id>
         <default>43</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x5C,  <!-- Temperature Sensor -->
+             0x05, 0x5D,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p41 -->
@@ -3710,6 +4548,28 @@
         <id>VPD_REC_NUM</id>
         <default>41</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x5E,  <!-- Temperature Sensor -->
+             0x05, 0x5F,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p44 -->
@@ -3756,6 +4616,28 @@
         <id>VPD_REC_NUM</id>
         <default>44</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x60,  <!-- Temperature Sensor -->
+             0x05, 0x61,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p46 -->
@@ -3802,6 +4684,28 @@
         <id>VPD_REC_NUM</id>
         <default>46</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x62,  <!-- Temperature Sensor -->
+             0x05, 0x63,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p39 -->
@@ -3848,6 +4752,27 @@
         <id>VPD_REC_NUM</id>
         <default>39</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x62,  <!-- Temperature Sensor -->
+             0x05, 0x63,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <!-- DIMM n0:p35 -->
@@ -3894,6 +4819,28 @@
         <id>VPD_REC_NUM</id>
         <default>35</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x62,  <!-- Temperature Sensor -->
+             0x05, 0x63,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p34 -->
@@ -3940,6 +4887,28 @@
         <id>VPD_REC_NUM</id>
         <default>34</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x62,  <!-- Temperature Sensor -->
+             0x05, 0x63,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p37 -->
@@ -3986,6 +4955,28 @@
         <id>VPD_REC_NUM</id>
         <default>37</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x62,  <!-- Temperature Sensor -->
+             0x05, 0x63,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p36 -->
@@ -4032,6 +5023,28 @@
         <id>VPD_REC_NUM</id>
         <default>36</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x62,  <!-- Temperature Sensor -->
+             0x05, 0x63,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p38 -->
@@ -4078,6 +5091,28 @@
         <id>VPD_REC_NUM</id>
         <default>38</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x62,  <!-- Temperature Sensor -->
+             0x05, 0x63,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p33 -->
@@ -4124,6 +5159,28 @@
         <id>VPD_REC_NUM</id>
         <default>33</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x62,  <!-- Temperature Sensor -->
+             0x05, 0x63,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 <!-- DIMM n0:p32 -->
@@ -4170,6 +5227,28 @@
         <id>VPD_REC_NUM</id>
         <default>32</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x62,  <!-- Temperature Sensor -->
+             0x05, 0x63,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
+
 </targetInstance>
 
 </attributes>
