@@ -33,7 +33,7 @@
     <attribute>
 	    <id>MODEL</id>
 	    <default>POWER8</default> <!-- wh_palmetto_bup used to be 'PALMETTO' -->
-    </attribute>    
+    </attribute>
     <attribute>
         <id>PHYS_PATH</id>
         <default>physical:sys-0</default>
@@ -202,12 +202,6 @@
         </default>
     </attribute>
     <attribute>
-        <id>MRW_SAFEMODE_MEM_THROTTLE_DENOMINATOR</id>
-        <default>
-            512
-        </default>
-    </attribute>
-    <attribute>
         <id>MRW_SAFEMODE_MEM_THROTTLE_NUMERATOR_PER_CHIP</id>
         <default>
             32
@@ -278,7 +272,7 @@
          <id>CONSOLE_KIND</id>
          <default>UART</default>
      </attribute> -->
-    <!-- wh_palmetto_bup <attribute> 
+    <!-- wh_palmetto_bup <attribute>
         <id>CONSOLE_UART_BASE</id>
         <default>0x3f8</default>
     </attribute> -->
@@ -620,7 +614,7 @@
             0x00000000,0x00000000
         </default>
     </attribute>
-    
+
     <!-- End PROC_PCIE_ attributes -->
 
     <!-- The default value of the following three attributes are written by -->
@@ -637,7 +631,7 @@
         <id>PROC_PCIE_PHB_ACTIVE</id>
         <default>0xe0</default>
     </attribute>
-    
+
     <!-- This should eventually be created by parsing the MRW, hardcoded for now -->
     <attribute>
         <id>PROC_PCIE_LANE_MASK_NON_BIFURCATED</id>
@@ -661,7 +655,7 @@
         <default>0x4</default><!-- PORT0NONRED -->
     </attribute>
     <attribute><id>PM_APSS_CHIP_SELECT</id>
-        <default>0x00</default><!-- CS0 -->       
+        <default>0x00</default><!-- CS0 -->
     </attribute>
     <!-- End pm_plat_attributes.xml -->
     </targetInstance>
