@@ -214,7 +214,27 @@
         </default>
     </attribute>
     <!-- End System Attributes from MRW -->
-
+    <attribute>
+        <id>IPMI_SENSORS</id>
+        <default>
+            0x07,0x01, <!-- OS_boot -->
+            0x08,0x02, <!-- Host_Status -->
+            0x09,0x03, <!-- FW_Boot_progress -->
+            0x0a,0x04, <!-- OCC_Active -->
+            0x0b,0x05, <!-- Power_cap -->
+            0x0c,0x06, <!-- PCI -->
+            0x0d,0x07, <!-- Boot_watchdog -->
+            0x0e,0xFF, <!-- Reboot_count -->
+            0x0F,0xFF,
+            0xFF,0xFF,
+            0xFF,0xFF,
+            0xFF,0xFF,
+            0xFF,0xFF,
+            0xFF,0xFF,
+            0xFF,0xFF,
+            0xFF,0xFF
+       </default>
+    </attribute>
     <!-- The default value of the following three attributes are written  -->
     <!-- by the HWP using them. The default values are not from MRW. They -->
     <!-- are included here FYI.                                           -->
@@ -658,7 +678,28 @@
         <default>0x00</default><!-- CS0 -->
     </attribute>
     <!-- End pm_plat_attributes.xml -->
-    </targetInstance>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+        <default>
+            0x01, 0x12,  <!-- Temperature sensor -->
+            0x05, 0x34,  <!-- Status Sensor -->
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF
+        </default>
+    </attribute>
+</targetInstance>
 
 <!-- PALMETTO n0p0 EX units -->
 
@@ -948,6 +989,27 @@
         <id>CHIP_UNIT</id>
         <default>1</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x08,  <!-- Temperature Sensor -->
+             0x05, 0x09,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -970,6 +1032,27 @@
         <id>CHIP_UNIT</id>
         <default>2</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x0a,  <!-- Temperature sensor -->
+             0x05, 0x0b,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -992,6 +1075,27 @@
         <id>CHIP_UNIT</id>
         <default>3</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x0c, <!-- Temperature sensor -->
+             0x05, 0x0d, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1014,6 +1118,27 @@
         <id>CHIP_UNIT</id>
         <default>4</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x0e, <!-- Temperature sensor -->
+             0x05, 0x0F, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1036,6 +1161,27 @@
         <id>CHIP_UNIT</id>
         <default>5</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x10,  <!-- Temperature sensor -->
+             0x05, 0x11,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1058,6 +1204,27 @@
         <id>CHIP_UNIT</id>
         <default>6</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x12, <!-- Temperature sensor -->
+             0x05, 0x13, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1080,6 +1247,27 @@
         <id>CHIP_UNIT</id>
         <default>9</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+        <default>
+             0x01, 0x14, <!-- Temperature sensor -->
+             0x05, 0x15, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1102,6 +1290,27 @@
         <id>CHIP_UNIT</id>
         <default>10</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x16, <!-- Temperature sensor -->
+             0x05, 0x17, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1124,6 +1333,27 @@
         <id>CHIP_UNIT</id>
         <default>11</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x18, <!-- Temperature sensor -->
+             0x05, 0x19, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1146,6 +1376,27 @@
         <id>CHIP_UNIT</id>
         <default>12</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x1a, <!-- Temperature sensor -->
+             0x05, 0x1b, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1168,6 +1419,27 @@
         <id>CHIP_UNIT</id>
         <default>13</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x1C, <!-- Temperature sensor -->
+             0x05, 0x0D, <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <targetInstance>
@@ -1190,6 +1462,27 @@
         <id>CHIP_UNIT</id>
         <default>14</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+         <default>
+             0x01, 0x1E,  <!-- Temperature sensor -->
+             0x05, 0x1F,  <!-- Status sensor -->
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF,
+             0xFF, 0xFF
+         </default>
+     </attribute>
 </targetInstance>
 
 <!-- PALMETTO n0p0 MCS units -->
@@ -1854,6 +2147,27 @@
         <id>EI_BUS_TX_LANE_INVERT</id>
         <default>0x00000000</default>
     </attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+        <default>
+            0x01, 0x30, <!-- Temperature sensor -->
+            0x05, 0x31, <!-- Status sensor -->
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF
+        </default>
+    </attribute>
 </targetInstance>
 
 <!-- PALMETTO Centaur MBAs affiliated with membuf1 -->
@@ -1971,6 +2285,27 @@
          </default>
     </attribute>
     <attribute><id>VPD_REC_NUM</id><default>8</default></attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+        <default>
+            0x01, 0x20, <!-- Temperature sensor -->
+            0x05, 0x21, <!-- Status sensor -->
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF
+        </default>
+    </attribute>
 </targetInstance>
 
 <!-- DIMM n0:p12 -->
@@ -2014,6 +2349,27 @@
          </default>
     </attribute>
     <attribute><id>VPD_REC_NUM</id><default>10</default></attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+        <default>
+            0x01, 0x22, <!-- Temperature sensor -->
+            0x05, 0x23, <!-- Status sensor -->
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF
+        </default>
+    </attribute>
 </targetInstance>
 
 <!-- DIMM n0:p10 -->
@@ -2057,6 +2413,27 @@
          </default>
     </attribute>
     <attribute><id>VPD_REC_NUM</id><default>12</default></attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+        <default>
+            0x01, 0x24, <!-- Temperature sensor -->
+            0x05, 0x25, <!-- Status sensor -->
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF
+        </default>
+    </attribute>
 </targetInstance>
 
 <!-- DIMM n0:p14 -->
@@ -2100,6 +2477,27 @@
          </default>
     </attribute>
     <attribute><id>VPD_REC_NUM</id><default>14</default></attribute>
+    <attribute>
+        <id>IPMI_SENSORS</id>
+        <default>
+            0x01, 0x26, <!-- Temperature sensor -->
+            0x05, 0x27, <!-- Status sensor -->
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF,
+            0xFF, 0xFF
+        </default>
+    </attribute>
 </targetInstance>
 
 </attributes>
